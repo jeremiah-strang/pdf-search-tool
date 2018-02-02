@@ -1,7 +1,7 @@
 {
   "name": "pdf_search_tool",
   "version": "1.0.0",
-  "description": "A simple tool for searching for text in PDF files",
+  "description": "A tool for searching for text in PDF files using OCR",
   "main": "main.js",
   "scripts": {
     "start": "electron ."

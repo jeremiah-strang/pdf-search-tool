@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PDF Search Tool</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/modals.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- input modal -->
+    <div id="input-modal" class="modal o-auto w400px">
+      <div class="modal-hdr-wrap">
+        <span class="modal-hdr"><i class="fa fa-folder"></i> Search PDF files</span>
+      </div>
+
+      <div class="modal-body">
+        <div class="input-row">
+          <h4>
+            Folder:&nbsp;&nbsp;&nbsp;
+            <input id="folder-input" type="file" class="pad1" webkitdirectory>
+          </h4>
+        </div>
+        <div class="input-row">
+          <h4>Search terms (separate terms with semicolons):</h4>
+          <input id="search-term-input" class="w100" type="text">
+        </div>
+        <div class="input-row">
+          <label class="checkbox-label">
+            <input id="case-sensitive-chk" type="checkbox">
+            Case sensitive?
+          </label>
+        </div>
+        <div class="modal-btn-wrap">
+          <button id="search-btn" class="btn-primary float-right" disabled>Search</button>
+        </div>
+      </div>
+    </div><!-- end input modal -->
+    
+    <!-- results modal -->
+    <div id="results-modal" class="modal w400px">
+      <div class="modal-hdr-wrap">
+        <span class="modal-hdr"><i class="fa fa-table"></i> Results</span>
+      </div>
+
+      <div class="modal-body o-auto">
+        <div id="results" class="pnl w100"></div>
+      </div>
+    </div><!-- end results modal -->
+
+    <div class="pnl w400px pad3">
+    </div>
+    <script src="renderer.js" type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+.modal,
+.modal-hdr-wrap,
+.modal-body,
+.modal-btn-wrap {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.modal > .modal-btn-wrap {
+  padding: 6px 10px;
+}
+
+.modal {
+  background-color: #333;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  box-shadow: 0 20px 100px rgba(0, 0, 0, .25), 0 15px 35px rgba(0, 0, 0, .30), 0 5px 15px rgba(0, 0, 0, .25);
+  color: #fff;
+  display: none;
+  left: calc(50% - 150px);
+  position: absolute;
+  top: 100px;
+  width: 300px;
+  z-index: 3;
+}
+
+  .modal-hdr-wrap {
+    background-color: #444;
+    border-bottom: 1px solid #666;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .modal-hdr-wrap,
+  .modal-body,
+  .modal-btn-wrap {
+    width: 100%;
+  }
+
+  .modal-btn-wrap {
+    display: inline-block;
+    height: auto;
+  }
+  .modal > .modal-btn-wrap {
+    padding: 0 10px 6px 10px;
+  }
+
+  .modal-body {
+    padding: 6px 10px;
+  }
+  
+  .modal-hdr {
+    display: inline-block;
+    margin: 0;
+    padding: 6px 0 4px 10px;
+    width: calc(100% - 24px);
+    font-size: 16px;
+  }
+    .modal-hdr > i.fa {
+      margin-right: 6px;
+    }
+    
+    .modal-hdr-btn-wrap {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+    }
+      .modal-hdr-btn-wrap > button,
+      .modal-hdr-btn-wrap > button:active,
+      .modal-hdr-btn-wrap > button.btn-danger:not(:hover) {
+        background-color: #555;
+        border-color: #666;
+        color: #fff;
+        padding: 0px;
+        width: 24px;
+      }
+
+      .modal-hdr-btn-wrap > button:hover,
+      .modal-hdr-btn-wrap > button:focus {
+        background-color: #666;
+        border-color: #777;
+      }
+
+    .modal-btn-wrap > button,
+    .modal-btn-wrap > .btn,
+    .modal-btn-wrap > input[type=submit],
+    .modal-btn-wrap > label {
+      display: inline-block;
+      float: right;
+      margin-left: 2px;
+    }
+
+    .modal-btn-wrap > label {
+      padding-top: 4px;
+    }
+
+#input-modal,
+#results-modal {
+  width: calc(100% - 16px);
+  max-width: 684px;
+}
+
+#input-modal {
+  top: 8px;
+  left: 8px;
+}
+
+#results-modal {
+ top: 258px;
+ left: 8px;
+ height: calc(100% - 270px);
+}
+  #results-modal .modal-body {
+    height: calc(100% - 28px);
+  }
+  #results ul {
+    margin-top: 0;
+  }
